@@ -1,0 +1,28 @@
+#grid-container {
+    display: flex; /* 横一列に並べる */
+    gap: 5px;      /* 箱同士のすき間 */
+    margin: 20px auto;
+}
+
+.number-input-box {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    text-align: center;      /* 文字を中央寄せ */
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;  /* 枠線を含めたサイズ固定 */
+    outline: none;
+}
+
+/* 入力欄の上下矢印（スピンボタン）を非表示にしてスッキリさせる設定 */
+.number-input-box::-webkit-inner-spin-button,
+.number-input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.number-input-box.highlight {
+    background-color: #ffeb3b !important;
+    border-color: #fbc02d !important;
+}
