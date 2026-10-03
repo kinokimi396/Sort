@@ -11,7 +11,13 @@
     <!-- 箱を並べるコンテナ -->
     <div id="grid-container"></div>
     <button id="sort-btn">ソート開始</button>
-    <button id="sort">ソート一覧</button>
+    <!--<button id="sort">ソート一覧</button>-->
+    <form>
+        <select name="sort_name" id="sort-select">
+            <option value="Insert_sort">挿入ソート</option>
+            <option value="Selection_sort">選択ソート</option>
+        </select>
+    </form>
 
     <script src="script.js" defer></script>
 </body>
